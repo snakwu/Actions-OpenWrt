@@ -90,5 +90,7 @@ jobs:
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
-        name: OpenWrt
-        path: openwrt/bin
+        name: OpenWrtimg
+        path: openwrt/bin/targets/x86/64/openwrt-x86-64-combined-squashfs.img.gz
+        name: OpenWrtconfig
+        path: openwrt/bin/targets/x86/64/config.buildinfo
